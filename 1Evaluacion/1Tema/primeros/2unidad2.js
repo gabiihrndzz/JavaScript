@@ -80,3 +80,12 @@ function testUnidad2_1bck(){
     else{
         alert('suspenso');}
     }
+
+    function pruebaboolean (){
+        let v = "cualquier cosa";
+      /*  if (v && true)
+            alert('verdadero');
+        else
+            alert('falso');*/
+        alert(/*true*/false && "cualquier cosa");
+    }
