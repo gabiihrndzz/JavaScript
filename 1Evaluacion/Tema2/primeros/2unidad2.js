@@ -120,3 +120,56 @@ function testUnidad2_1bck(){
         }
         document.write('<br>El valor de f es: ', f);
     }
+
+    function martes(){
+         let i= 0 ; 
+        let res= "";
+        for(;i<10;i++){
+            res+=i;
+            document.write(res+'<br>');
+        }
+        document.write('<br>');
+        let res2 = "";
+        for(let i=0,j=10;i<j;i++){
+            res2+=i;
+            document.write(res2+'<br>');
+        }
+        document.write('<br>');
+        document.write('<br>');
+        let res3 = "";
+        for(let i=0,j=10;i<j;i++){
+            res3+=i;
+            if (i>9) break;
+            document.write(res3+'<br>');
+        }
+
+        document.write('<br>');
+        let res4="";
+        for(let i=0;i<10;i++){
+            res4+=1;
+            if(i%3==0){
+                continue;}
+                document.write(res4);
+                document.write('<br>');
+                if(i>9) break;
+        }
+        document.write('<br>');
+
+        let res5 = "";
+        for (let i=0,j=0;i<10 && j<5;i++,j++){
+            res5+=i;
+            document.write(res5);
+            document.write('<br>');
+        }
+    }
+
+    function navigator(){
+        let NombreObjeto,objeto;
+        NombreObjeto =prompt('Introduzca el nombre del objeto','navigator');
+        objeto=eval(NombreObjeto);
+        for(let propiedad in objeto ){
+            document.write(NombreObjeto,". ", propiedad,": ",objeto[propiedad],"<br>");
+        }
+
+
+    }
